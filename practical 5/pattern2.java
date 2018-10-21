@@ -1,26 +1,16 @@
 import java.util.*;
-
-
-class input{
-	String abc = "";
-	void set(String a){
-		abc = a;
-		}
-	void get(){
-		System.out.println(" " +abc);
-}
-}
-
-
 class pattern2{
 	public static void main(String args[]){
-		String s1,s2="";
+		int a1;
+		String s1="",s2="";
 		int i,j,k=50;
-		input a1 = new input();
+	
 		Scanner AB = new Scanner(System.in);
-		s1 = AB.nextLine();
-		a1.set(s1);
-		
+		System.out.println("Enter number:");
+		a1 = AB.nextInt();
+		for(i=0;i<a1;i++){
+			s1 = s1 + "*";
+		}
 		for(i=0;i<s1.length();i++){
 			for(j=0;j<k;j++){
 				System.out.print(" ");
